@@ -479,7 +479,10 @@ const CTA = () => {
              <Smartphone size={24} />
              Join Waitlist
           </button>
-          <button className="bg-transparent border-4 border-black text-black px-10 py-5 font-black uppercase tracking-widest text-lg hover:bg-black hover:text-brand-yellow transition-colors clip-button">
+          <button
+            onClick={() => window.location.href = '#features'}
+            className="bg-transparent border-4 border-black text-black px-10 py-5 font-black uppercase tracking-widest text-lg hover:bg-black hover:text-brand-yellow transition-colors clip-button"
+          >
              Learn More
           </button>
         </div>
