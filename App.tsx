@@ -92,7 +92,13 @@ const Navbar = () => {
               <a href="#features" className="text-white/70 hover:text-brand-yellow font-bold uppercase tracking-wider text-sm transition-colors">Features</a>
               <a href="#method" className="text-white/70 hover:text-brand-yellow font-bold uppercase tracking-wider text-sm transition-colors">The Method</a>
               <a href="#ranks" className="text-white/70 hover:text-brand-yellow font-bold uppercase tracking-wider text-sm transition-colors">Ranks</a>
-              <Button variant="primary" className="py-2 px-6 text-xs">Get App</Button>
+              <Button
+                variant="primary"
+                className="py-2 px-6 text-xs"
+                onClick={() => window.location.href = 'mailto:getlockinmobile@gmail.com?subject=LockIn Waitlist&body=I want to be notified when LockIn launches!'}
+              >
+                Join Waitlist
+              </Button>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -147,11 +153,14 @@ const Hero = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-              <Button variant="primary">
-                Start Training <ChevronRight className="w-5 h-5" />
+              <Button
+                variant="primary"
+                onClick={() => window.location.href = 'mailto:getlockinmobile@gmail.com?subject=LockIn Waitlist&body=I want to be notified when LockIn launches!'}
+              >
+                Join Waitlist <ChevronRight className="w-5 h-5" />
               </Button>
-              <Button variant="secondary">
-                View Demo
+              <Button variant="secondary" onClick={() => window.location.href = '#features'}>
+                Learn More
               </Button>
             </div>
 
@@ -463,17 +472,20 @@ const CTA = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-6">
-          <button className="bg-black text-white px-10 py-5 font-black uppercase tracking-widest text-lg hover:scale-105 transition-transform shadow-2xl clip-button flex items-center justify-center gap-3">
+          <button
+            onClick={() => window.location.href = 'mailto:getlockinmobile@gmail.com?subject=LockIn Waitlist&body=I want to be notified when LockIn launches!'}
+            className="bg-black text-white px-10 py-5 font-black uppercase tracking-widest text-lg hover:scale-105 transition-transform shadow-2xl clip-button flex items-center justify-center gap-3"
+          >
              <Smartphone size={24} />
-             Download iOS
+             Join Waitlist
           </button>
           <button className="bg-transparent border-4 border-black text-black px-10 py-5 font-black uppercase tracking-widest text-lg hover:bg-black hover:text-brand-yellow transition-colors clip-button">
-             Read Manifesto
+             Learn More
           </button>
         </div>
-        
+
         <p className="mt-8 text-xs font-bold uppercase tracking-[0.2em] opacity-60">
-          Available on App Store & Play Store
+          Coming Soon to App Store & Play Store
         </p>
       </div>
     </section>
@@ -491,14 +503,14 @@ const Footer = () => {
           </div>
           
           <div className="flex gap-8 text-sm font-bold uppercase tracking-widest text-white/40">
-            <a href="#" className="hover:text-white transition-colors">Privacy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms</a>
-            <a href="#" className="hover:text-white transition-colors">Support</a>
-            <a href="#" className="hover:text-white transition-colors">Twitter</a>
+            <a href="/privacy-policy.html" className="hover:text-white transition-colors">Privacy</a>
+            <a href="/terms.html" className="hover:text-white transition-colors">Terms</a>
+            <a href="/support.html" className="hover:text-white transition-colors">Support</a>
+            <a href="mailto:getlockinmobile@gmail.com" className="hover:text-white transition-colors">Contact</a>
           </div>
-          
+
           <div className="text-white/20 text-xs font-mono">
-            © 2024 LOCKIN SYSTEMS INC.
+            © 2024 LOCKIN | v1.0.0
           </div>
         </div>
       </div>
